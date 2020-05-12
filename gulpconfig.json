@@ -1,6 +1,6 @@
 {
 	"browserSyncOptions": {
-		"proxy": "http://localhost/Wordpress-Tema/kks-theme/",
+		"proxy": "http://kks.test/Wordpress-Tema/kks-theme/",
 		"notify": true
 	},
 	"browserSyncWatchFiles": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"],
