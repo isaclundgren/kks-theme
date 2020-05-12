@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <? get_template_part('global-templates/hero'); ?>
 <? get_template_part('global-templates/catfolios'); ?>
-<? //get_template_part('global-templates/portfolios'); ?>
+<? get_template_part('global-templates/adoption'); ?>
 
 
 <div class="wrapper" id="page-wrapper">

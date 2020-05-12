@@ -9,23 +9,23 @@
 defined( 'ABSPATH' ) || exit;
 
 
-$catfolios = new WP_Query([
-    'post_type' => 'cat_portfolio',
-    'posts_per_page' => 4,
+$adoption = new WP_Query([
+    'post_type' => 'cat_adoption',
+    'posts_per_page' => 3,
     'orderby' => 'post_title',
     'order' => 'DESC',
 ]);
 
-if($catfolios->have_posts() ) {
-    //We have catfolios
+if($adoption->have_posts() ) {
+    //We have adoption
 ?>
 
 
-<div class="wrapper" id="wrapper-catfolios">
+<div class="wrapper" id="wrapper-adoption">
     <div class="container">
         <div class="row">
-            <? while($catfolios->have_posts() ) : $catfolios->the_post(); ?>
-                <? get_template_part('loop-templates/content', 'catfolio'); ?>
+            <? while($adoption->have_posts() ) : $adoption->the_post(); ?>
+                <? get_template_part('loop-templates/content', 'adoption'); ?>
             <? endwhile;?>
             <?wp_reset_postdata();?>
         </div> 

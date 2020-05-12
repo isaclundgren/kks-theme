@@ -22,7 +22,7 @@
             <div class="meta-data">
                 <?php
                     if($age = get_field('cat_age')) {
-                        $bday = new DateTime($age); // Your date of birth
+                        $bday = new DateTime($age); 
                         $today = new Datetime(date('m.d.y'));
                         $diff = $today->diff($bday);
                     }
