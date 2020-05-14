@@ -1,6 +1,6 @@
 <?php
 /**
- * USPs setup
+ * Cat portfolio setup
  *
  * @package understrap
  */
