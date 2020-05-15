@@ -17,36 +17,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="entry-meta">
 
-			
-
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
 
-	
-
-    <div class="card">
-			<div class="card-header">
-				<?php if($client = get_field('client') ) : ?>
-					<span class="badge badge-warning">Projekt beställt av</span> <a href="www.bool.se" class="badge badge-success"><? echo $client ?></a>
-					
-				<?endif;?>
-			</div>
-			<img src="<?php the_post_thumbnail_url('large' ); ?>" 
-			alt="<?the_title();?>">
-			<div class="card-body d-flex justify-content-center align-items-center">
-				<p class="card-text"><?php the_content(); ?></p>
-			</div>
-			<div class="card-footer text-muted">
-				<?php
-				// the_terms(
-				// 	get_the_id(),
-				// 	'branch',
-				// 	__('Branches: ')
-				// );
-				?>
-			</div>
-		</div>
+        <? if(has_post_thumbnail() ) : ?>
+            <img src="<? the_post_thumbnail_url('medium_large'); ?>" alt="<?the_title();?>" 
+            class="img-fluid mb-3 img-thumbnail">
+        <?endif;?>
 
 	</div><!-- .entry-content -->
 
