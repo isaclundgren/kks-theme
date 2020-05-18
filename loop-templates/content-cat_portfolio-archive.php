@@ -1,5 +1,4 @@
-
-<div class="col-sm-12 col-md-6 col-lg-3 d-flex">
+<div class="col-sm-12 col-md-6 col-lg-4 d-flex">
     <div class="card mb-2 text-center card-catfolio" >
         <? if(has_post_thumbnail() ) : ?>
             <a href="<? the_permalink(); ?>">
@@ -36,4 +35,3 @@
         </div>
     </div>
 </div>
-
