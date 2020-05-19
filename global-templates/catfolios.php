@@ -41,9 +41,9 @@ if($catfolios->have_posts() ) {
 <div class="wrapper" id="wrapper-catfolios">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 justify-content-center">
+            <div class="col-sm-12 justify-content-center">
                 <h2 class="text-center mb-4"><?_e('Our Lovely Cats', 'kks-theme')?></h2>
-                <p class="text-center"><?_e('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate debitis repellendus fuga eius deleniti corrupti accusamus? Minus dignissimos esse hic doloribus dolorem? Eos impedit libero reprehenderit optio fuga excepturi.','kks-theme')?></p>
+                <p class=""><?_e('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate debitis repellendus fuga eius deleniti corrupti accusamus? Minus dignissimos esse hic doloribus dolorem? Eos impedit libero reprehenderit optio fuga excepturi.','kks-theme')?></p>
             </div>
         </div>
     </div>
