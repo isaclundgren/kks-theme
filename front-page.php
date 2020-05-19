@@ -19,7 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<? get_template_part('global-templates/hero'); ?>
+<? //get_template_part('global-templates/hero'); ?>
+<? get_template_part('global-templates/customhero'); ?>
 <? get_template_part('global-templates/catfolios'); ?>
 <? get_template_part('global-templates/success-stories'); ?>
 <? get_template_part('global-templates/adoption'); ?>
