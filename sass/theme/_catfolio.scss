@@ -1,0 +1,17 @@
+#wrapper-catfolios {
+	font-family: 'Roboto Condensed', sans-serif;
+
+	.card-catfolio {
+		.img-fluid {
+			opacity: 1;
+
+			&:hover {
+				opacity: 0.5;
+				transition: opacity .2s ease-out;
+				-moz-transition: opacity .2s ease-out;
+				-webkit-transition: opacity .2s ease-out;
+				-o-transition: opacity .2s ease-out;
+			}
+		}
+	}
+}

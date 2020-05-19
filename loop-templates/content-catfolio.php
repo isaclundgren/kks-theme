@@ -3,7 +3,7 @@
     <div class="card mb-2 text-center card-catfolio" >
         <? if(has_post_thumbnail() ) : ?>
             <a href="<? the_permalink(); ?>">
-            <img class="card-img-top img-fluid img-thumbnail" 
+            <img class="card-img-top img-fluid" 
             src="<?the_post_thumbnail_url();?>" 
             alt="<?the_title();?>">
             </a>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <div class="btn btn-primary">Read more</div>
+            <a href="<?the_permalink();?>" class="btn btn-secondary"><?_e('Read more', 'kks-theme')?></a>
         </div>
     </div>
 </div>
