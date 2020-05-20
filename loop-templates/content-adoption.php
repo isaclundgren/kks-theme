@@ -17,10 +17,12 @@
             <h5 class="card-title"><?the_title();?></h5>
             <p class="card-text"><?the_content();?></p>
 
-            <div class="linkbtn">
-                <?if($adoption_link = get_field('adoptions_link') ) : ?>
-                    <a href="<? echo $adoption_link;?>" class="btn btn-primary">Read more</a>
-                <?endif;?>
+            <div class="flex d-flex flex-column">
+                <!-- <div class="linkbtn"> -->
+                    <?if($adoption_link = get_field('adoptions_link') ) : ?>
+                        <a href="<? echo $adoption_link;?>" class="btn btn-secondary ">Read more</a>
+                    <?endif;?>
+                <!-- </div> -->
             </div>
             
         </div>
