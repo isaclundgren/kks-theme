@@ -2,16 +2,7 @@
 
     <?while(have_posts() ) : the_post();?>
 
-    <p><?__('Posted on', 'kks-theme');?><? echo get_the_date('l jS F, Y '); ?></p>
-
     <? the_content();?>
-
-    <?php
-    $fname = get_the_author_meta('first_name');
-    $lname = get_the_author_meta('last_name');
-    ?>
-
-    <p><?__('Posted by', 'kks-theme')?><?  echo $fname .  ' ' . $lname ?> </p>
 
     <?php
 
@@ -36,10 +27,14 @@
 
     <hr class="divider">
 
-    
     <?php
-    //comments_template();
+    $fname = get_the_author_meta('first_name');
+    $lname = get_the_author_meta('last_name');
     ?>
+    <p><?_e('Posted on', 'kks-theme');?> <? echo get_the_date('l jS F, Y '); ?><?_e('by', 'kks-theme')?> <?  echo $fname .  ' ' . $lname ?></p>
+
+
+    
 
 <? endwhile; else: endif;?>
 
