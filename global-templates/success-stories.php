@@ -18,7 +18,6 @@ defined( 'ABSPATH' ) || exit;
 <div class="wrapper" id="wrapper-stories">
     <div class="container">
     <h2 class="text-center mb-4"><?_e('Our Success Stories', 'kks-theme')?></h2>
-     <p class=""><?_e('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate debitis repellendus fuga eius deleniti corrupti accusamus? Minus dignissimos esse hic doloribus dolorem? Eos impedit libero reprehenderit optio fuga excepturi.','kks-theme')?></p>
         <div class="row">
         <?get_template_part('loop-templates/content', 'storiesUpper');?>
             <div class="col-sm-12">

@@ -24,12 +24,18 @@ if($adoption->have_posts() ) {
 <div class="wrapper" id="wrapper-adoption">
     <div class="container">
         <div class="row">
+            <div class="col-sm-12 justify-content-center">
+                <h2 class="text-center mb-4"><?_e('Adoption? - This is how', 'kks-theme')?></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <? while($adoption->have_posts() ) : $adoption->the_post(); ?>
                 <? get_template_part('loop-templates/content', 'adoption'); ?>
             <? endwhile;?>
             <?wp_reset_postdata();?>
         </div> 
-        <hr>
     </div>
 </div>
 

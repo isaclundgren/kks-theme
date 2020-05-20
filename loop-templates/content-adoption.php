@@ -20,7 +20,7 @@
             <div class="flex d-flex flex-column">
                 <!-- <div class="linkbtn"> -->
                     <?if($adoption_link = get_field('adoptions_link') ) : ?>
-                        <a href="<? echo $adoption_link;?>" class="btn btn-secondary ">Read more</a>
+                        <a href="<? echo $adoption_link;?>" class="btn btn-secondary "><?_e('Read more', 'kks-theme')?></a>
                     <?endif;?>
                 <!-- </div> -->
             </div>
