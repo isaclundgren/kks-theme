@@ -3,6 +3,27 @@
     <?while(have_posts() ) : the_post();?>
 
     <? the_content();?>
+
+    <hr>
+
+    <section class="meta-gender">
+    <?php
+            the_terms(
+                get_the_id(),
+                'gender',
+                _e('Gender: ', 'kks-theme')
+            );
+            ?>
+            <br>
+            <br>
+       <?php
+            the_terms(
+                get_the_id(),
+                'city',
+                _e('Lives in: ', 'kks-theme')
+            );
+            ?>
+    </section>
      
 
     <hr class="divider">
@@ -15,14 +36,8 @@
             <?endforeach;?>
 
             <div class="metadata-wrapper">
-                <a href="#" class="btn btn-warning">Adopt me</a>
-            <?php
-            the_terms(
-                get_the_id(),
-                'brands',
-                __('Tags: ')
-            );
-            ?>
+                <!-- <a href="#" class="btn btn-warning">Adopt me</a> -->
+                <?get_template_part('loop-templates/content', 'accordion');?>
         </div>
 
         <?php
@@ -43,11 +58,11 @@
 
     <hr class="divider">
 
-    <p><? echo get_the_date('l jS F, Y '); ?></p>
+    <div class="adoptbtn d-flex flex-column">
+        <a href="#" class="btn btn-primary">Adopt me!</a>
+    </div>
+
     
-    <?php
-    //comments_template();
-    ?>
 
 <? endwhile; else: endif;?>
 

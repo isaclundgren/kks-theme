@@ -5,7 +5,7 @@
         if(have_rows('accordion_repeater_cats') ) : 
             $i = 1;
 
-            echo '<div id="accordion" class="ml-4">';
+            echo '<div id="accordion" class="ml-2">';
 
         while(have_rows('accordion_repeater_cats') ) : the_row();
 
@@ -26,10 +26,11 @@
             
             <div id="collapse-<?php echo $i;?>" class="collapse" aria-labelledby="heading-<?php echo $i;?>" data-parent="#accordion">
                 <div class="card-body">
-                <?php echo $content; ?>
+                    <?php echo $content; ?>
                 </div>
             </div>
-        </div> 
+        </div>
+         
         
         <? $i++;
 

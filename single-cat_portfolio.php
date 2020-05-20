@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?get_template_part('loop-templates/content-cat_portfolio', 'single' );	?>
 				<div class="row">
-					<main class="site-main col-sm-12 col-md-6 col-lg-6" id="main">
+					<main class="site-main col-sm-12 col-md-8 col-lg-8" id="main">
 						
 						<?php
 							get_template_part('loop-templates/content', 'custompost')
@@ -28,11 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					</main><!-- #main -->
 					
-					<div class="col-sm-12 col-md-6 col-lg-6">
+					<!-- <div class="col-sm-12 col-md-6 col-lg-6"> -->
 						<?php
-							get_template_part('loop-templates/content', 'accordion');
+							//get_template_part('loop-templates/content', 'accordion');
 						?>
-					</div>
+					<!-- </div> -->
 				
 
 		</div><!-- .row -->

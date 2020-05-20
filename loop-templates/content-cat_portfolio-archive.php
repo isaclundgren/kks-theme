@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <div class="btn btn-primary">Read more</div>
+            <a href="<?the_permalink();?>" class="btn btn-secondary">Read more</a>
         </div>
     </div>
 </div>
