@@ -6,7 +6,7 @@
 
 
 <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
-    <div class="card mb-2 card-adoption" >
+    <div class="card mb-2 card-adoption border-0" >
         <div class="card-header">
         <? if($adoption = get_field('adoption') ) : ?>
             <i class="fa <? echo $adoption; ?> fa-3x"></i>

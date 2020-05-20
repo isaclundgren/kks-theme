@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 
         <? if(has_post_thumbnail() ) : ?>
             <img src="<? the_post_thumbnail_url('medium_large'); ?>" alt="<?the_title();?>" 
-            class="img-fluid mb-3 img-thumbnail">
+            class="img-fluid mb-3">
         <?endif;?>
 
 	</div><!-- .entry-content -->
