@@ -22,7 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h1 class="text-center"><?//the_field('hero_title')?></h1>
         <h2 class="text-center"><?//the_field('hero_subtitle')?></h2>
         <div class="btn d-flex justify-content-center">
-            <a href="#" class="btn btn-primary text-center mb-2 herobtn">Click me</a>
+            <?php
+            $link = get_field('hero_link');
+            if($link) : ?>
+                <a class="btn btn-secondary text-center mb-2 herobtn" href="<?php echo esc_url( $link ); ?>">All Cats</a>
+                <?php else : ?>
+                 <a href="#" class="btn btn-primary">Add a custom field</a>
+             <?php endif;?>
         </div>
         <!-- <img src="<?   ?>" alt="Hero Image" class="img-fluid"> -->
         
