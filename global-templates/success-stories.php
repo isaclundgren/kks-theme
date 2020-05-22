@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
     <h2 class="text-center mb-4"><?_e('Our Success Stories', 'kks-theme')?></h2>
         <div class="row">
         <?get_template_part('loop-templates/content', 'storiesUpper');?>
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="carousel-inner">
                 <?php $stories = get_posts(array('post_type' => 'success_story', 'posts_per_page' => 5)); ?>
                     <? $count = 0; ?>

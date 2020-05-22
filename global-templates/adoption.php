@@ -13,7 +13,7 @@ $adoption = new WP_Query([
     'post_type' => 'cat_adoption',
     'posts_per_page' => 3,
     'orderby' => 'post_title',
-    'order' => 'DESC',
+    'order' => 'ASC',
 ]);
 
 if($adoption->have_posts() ) {
