@@ -19,18 +19,16 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="customlogo d-flex justify-content-center align-items-center">
             <img src="<? echo the_field('hero_logo')?>" alt="Hero Logo">
         </div>
-        <h1 class="text-center"><?//the_field('hero_title')?></h1>
-        <h2 class="text-center"><?//the_field('hero_subtitle')?></h2>
         <div class="btn d-flex justify-content-center">
             <?php
             $link = get_field('hero_link');
             if($link) : ?>
-                <a class="btn btn-secondary text-center mb-2 herobtn" href="<?php echo esc_url( $link ); ?>">All Cats</a>
+                <a class="btn btn-secondary text-center mb-2 herobtn" href="<?php echo esc_url( $link ); ?>"><?_e('Our Cats', 'kks-theme')?></a>
                 <?php else : ?>
-                 <a href="#" class="btn btn-primary">Add a custom field</a>
+                 <a href="#" class="btn btn-primary"><?_e('Add a custom field', 'kks-theme')?></a>
              <?php endif;?>
         </div>
-        <!-- <img src="<?   ?>" alt="Hero Image" class="img-fluid"> -->
+        
         
     </div>
 </section>

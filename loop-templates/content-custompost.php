@@ -59,7 +59,7 @@
     <hr class="divider">
 
     <div class="adoptbtn d-flex flex-column">
-        <a href="#" class="btn btn-primary mb-3">Adopt me!</a>
+        <a href="#" class="btn btn-primary mb-3"><?_e('Adopt me!', 'kks-theme')?></a>
     </div>
 
     

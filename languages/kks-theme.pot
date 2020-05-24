@@ -1,17 +1,17 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: kks-theme\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2020-05-24 14:16+0200\n"
-"PO-Revision-Date: 2020-05-24 14:39+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2020-05-24 12:23+0200\n"
+"POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
-"Language: sv_SE\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
@@ -43,10 +43,6 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive-cat_portfolio.php:34
-msgid "All Our Cats"
-msgstr "Alla våra katter"
-
 #: author.php:38
 msgid "About:"
 msgstr ""
@@ -70,10 +66,6 @@ msgstr ""
 #: author.php:79
 msgid "in"
 msgstr ""
-
-#: category-news.php:33
-msgid "News"
-msgstr "Nyheter"
 
 #: comments.php:37
 #, php-format
@@ -103,27 +95,19 @@ msgstr ""
 
 #: global-templates/adoption.php:28
 msgid "Adoption? - This is how"
-msgstr "Adoptera? - Så här funkar det"
+msgstr ""
 
 #: global-templates/catfolios.php:45
 msgid "Our Lovely Cats"
-msgstr "Våra fina katter"
-
-#: global-templates/customhero.php:26
-msgid "Our Cats"
-msgstr "Våra katter"
-
-#: global-templates/customhero.php:28
-msgid "Add a custom field"
 msgstr ""
 
 #: global-templates/form.php:20
 msgid "Contact us"
-msgstr "Kontaka oss"
+msgstr ""
 
 #: global-templates/success-stories.php:20
 msgid "Our Success Stories"
-msgstr "Solskenshistorier"
+msgstr ""
 
 #: header.php:31
 msgid "Skip to content"
@@ -326,10 +310,9 @@ msgid "Null"
 msgstr ""
 
 #: inc/acf/includes/admin/admin-field-group.php:221
-#: loop-templates/content-cat_portfolio-archive.php:33
 #: loop-templates/content-catfolio.php:34
 msgid "Location"
-msgstr "Bor i"
+msgstr ""
 
 #: inc/acf/includes/admin/admin-field-group.php:222
 #: inc/acf/includes/admin/tools/class-acf-admin-tool-export.php:295
@@ -3269,7 +3252,7 @@ msgstr ""
 #: inc/acf/pro/fields/class-acf-field-gallery.php:507
 #: loop-templates/content-form.php:27
 msgid "Close"
-msgstr "Stäng"
+msgstr ""
 
 #: inc/acf/pro/fields/class-acf-field-gallery.php:580
 msgid "Insert"
@@ -3374,7 +3357,7 @@ msgstr ""
 
 #: inc/custom-post-types.php:13
 msgid "All cats"
-msgstr "Alla katter"
+msgstr ""
 
 #: inc/custom-post-types.php:14 inc/custom-post-types.php:83
 #: inc/custom-post-types.php:153
@@ -3972,7 +3955,7 @@ msgstr ""
 
 #: inc/setup.php:154
 msgid "Read More..."
-msgstr "Läs mer…"
+msgstr ""
 
 #: inc/template-tags.php:33
 msgctxt "post date"
@@ -4069,48 +4052,42 @@ msgid "Full sized footer widget with dynamic grid"
 msgstr ""
 
 #: loop-templates/content-adoption.php:23
-#: loop-templates/content-cat_portfolio-archive.php:38
 #: loop-templates/content-catfolio.php:39
 msgid "Read more"
-msgstr "Läs mer"
+msgstr ""
 
 #: loop-templates/content-blogpost.php:34
 msgid "Posted on"
-msgstr "Publicerad"
+msgstr ""
 
 #: loop-templates/content-blogpost.php:34
 msgid "by"
-msgstr "av"
+msgstr ""
 
-#: loop-templates/content-cat_portfolio-archive.php:26
 #: loop-templates/content-catfolio.php:27
 #, php-format
 msgid " Age: %d year and %d months"
-msgstr " Ålder: %d år och %d månader"
+msgstr ""
 
 #: loop-templates/content-custompost.php:14
 msgid "Gender: "
-msgstr "Kön: "
+msgstr ""
 
 #: loop-templates/content-custompost.php:23
 msgid "Lives in: "
-msgstr "Bor i: "
-
-#: loop-templates/content-custompost.php:62
-msgid "Adopt me!"
-msgstr "Adoptera mig!"
+msgstr ""
 
 #: loop-templates/content-form.php:9
 msgid "Click here"
-msgstr "Klicka här"
+msgstr ""
 
 #: loop-templates/content-form.php:18
 msgid "Please enter your message"
-msgstr "Skriv ditt meddelande"
+msgstr ""
 
 #: loop-templates/content-frontpage.php:29 loop-templates/content-page.php:29
 #: loop-templates/content-single.php:35
-#: loop-templates/content-singleblog.php:34 loop-templates/content.php:42
+#: loop-templates/content-singleblog.php:35 loop-templates/content.php:42
 msgid "Pages:"
 msgstr ""
 

@@ -31,7 +31,7 @@
     $fname = get_the_author_meta('first_name');
     $lname = get_the_author_meta('last_name');
     ?>
-    <p><?_e('Posted on', 'kks-theme');?> <? echo get_the_date('l jS F, Y '); ?><?_e('by', 'kks-theme')?> <?  echo $fname .  ' ' . $lname ?></p>
+    <p><?_e('Posted on', 'kks-theme');?> <? echo get_the_date('l j F, Y '); ?><?_e('by', 'kks-theme')?> <?  echo $fname .  ' ' . $lname ?></p>
 
 
     

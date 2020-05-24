@@ -21,17 +21,21 @@
                         $diff = $today->diff($bday);
                     }
                 ?>
-                <p class="card-text"><?printf(' Ålder: %d år och %d månader', $diff->y, $diff->m);  ?></p>
+                <p class="card-text">
+                    <?printf(
+                        __(' Age: %d year and %d months', 'kks-theme'), 
+                        $diff->y, $diff->m);  ?>
+                </p>
                 <hr>
 
                 <?php
                     if($cat_location = get_field('cat_location') ) : ?>
-                    <p class="card-text">Besöksort: <? echo $cat_location ?></p>
+                    <p class="card-text"><?_e('Location', 'kks-theme')?>: <? echo $cat_location ?></p>
                 <?endif;?>
             </div>
         </div>
         <div class="card-footer">
-            <a href="<?the_permalink();?>" class="btn btn-secondary">Read more</a>
+            <a href="<?the_permalink();?>" class="btn btn-secondary"><?_e('Read more', 'kks-theme')?></a>
         </div>
     </div>
 </div>
