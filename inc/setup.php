@@ -30,7 +30,7 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 		 * If you're building a theme based on understrap, use a find and replace
 		 * to change 'understrap' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'understrap', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'kks-theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -71,6 +71,9 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 		 * Adding Thumbnail basic support
 		 */
 		add_theme_support( 'post-thumbnails' );
+
+		add_image_size('blog-large', 800,400, true);
+		add_image_size('blog-small', 300,200, true);
 
 		/*
 		 * Adding support for Widget edit icons in customizer
@@ -149,7 +152,7 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 		if ( ! is_admin() ) {
 			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
 				'Read More...',
-				'understrap'
+				'kks-theme'
 			) . '</a></p>';
 		}
 		return $post_excerpt;

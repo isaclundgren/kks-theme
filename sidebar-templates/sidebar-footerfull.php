@@ -20,11 +20,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>" id="footer-full-content" tabindex="-1">
 
-			<div class="row">
+			<h4 class="footer-title mb-3">KKS-Malmö</h4>
+				<div class="row">
+					
+					<?php dynamic_sidebar( 'footerfull' ); ?>
 
-				<?php dynamic_sidebar( 'footerfull' ); ?>
-
-			</div>
+				</div>
 
 		</div>
 

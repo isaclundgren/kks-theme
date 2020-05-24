@@ -1,0 +1,25 @@
+#wrapper-adoption {
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #e9ecef;
+
+	h2 {
+		color: $black;
+
+	}
+
+	.card-adoption {
+
+		.card-header {
+			background-color: #e9ecef;
+			border-bottom: none;
+
+		}
+
+		.card-body {
+			background-color: #e9ecef;
+		}
+	}
+
+
+}
