@@ -17,7 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section id="hero" class="img-fluid d-flex align-items-center" style="background-image:linear-gradient(rgba(102,102,102,0.6), rgba(102,102,102,0.6)) ,url('<? echo the_field('background_image')['url'] ?>');">
     <div class="container">
         <div class="customlogo d-flex justify-content-center align-items-center">
-            <img src="<? echo the_field('hero_logo')?>" alt="Hero Logo">
+            <?php
+            $herologo = get_field('hero_logo');
+            if($herologo) : ?>
+                <img src="<? echo esc_url ($herologo); ?>" alt="Hero Logo">
+            <?php endif;?>
         </div>
         <div class="btn d-flex justify-content-center">
             <?php
